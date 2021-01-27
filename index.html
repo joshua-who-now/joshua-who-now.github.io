@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<HTML5>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="">
+    </head>
+
+    <a id="home"></a>
+    <header style="padding-top: 30px; padding-bottom: 30px;">
+        <div class="navbar">
+            <ul>
+                <li><button class="button" onclick="BackToBeginning()">HOME</button></li>
+                <li><button class="button" onclick="ToAbout()">ABOUT</button></li>
+                <li><button class="button" onclick="ToProjects()">PROJECTS</button></li>
+                <li><button class="button" onclick="ToResume()">RESUME</button></li>
+                <li><button class="button" onclick="ToContact()">CONTACT</button></li>
+            </ul>
+        </div>
+    </header>
+    
+    <body>
+        <div style="padding-bottom:50px;">
+            <div style="font-family: Montserrat, sans-serif;
+                        width: 90%;
+                        height: 396px;
+                        background-image: url();
+                        background-repeat:no-repeat;
+                        background-position: top;
+                        background-size: cover;
+                        margin:0 auto">
+                <div style="text-align:left;
+                        padding-top: 3%;
+                        padding-left: 3%">
+                    <span style="font-size : 500%;">
+                        Joshua Yuen
+                    </span><br>
+                    <span style="letter-spacing: 2px;         
+                    font-size : 225%;">
+                        DEVELOPER
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="body" style="padding-bottom: 50px;">
+            <div class="vertical-line" id="about"></div>
+            <div style="padding-top: 25px;">
+                <div style="display: inline-block; text-align: right; transform: translateY(-10%);">
+                    <h2>#001<br>About Me</h2>
+                    <div style="text-align: center;">
+                        <img class="image-cropper" src="https://avatars.githubusercontent.com/u/55476643?s=460&u=be15fffa6e68681a7f638f4d6d6392ed41d50f14&v=4">
+                        <div class="text-inline">Based in Chicago, IL</div>
+
+                        <div>
+                            <img class="smbutton" onclick="ToLinkedIn()" src="" width="20px" height="20px">
+                            <img class="smbutton" onclick="ToGithub()" src="" width="20px" height="20px">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="vertical-line" style="display: inline-block; height: 250px; margin-left: 20px; margin-right: 20px;"></div>
+                <div style="display: inline-block; text-align:left; transform: translateY(-15%);">
+                    <p style="line-height: 175%;"> I am currently a senior studying for a Bachelor of Science in Computer Science<br>
+                        at the University of Illinois at Chicago with an expected graduation date of May 2021.<br>
+                        My passion lies in algorithmic design, software development, and data science,<br>
+                        analytics, and engineering. 
+                    </p>
+
+                    <p style="line-height: 175%;">
+                        A little bit about myself outside of work, I drink dark roast coffee<br> 
+                        almost everyday to fuel my caffeine addiction and enjoy rock climbing, <br>
+                        specifically bouldering and top rope. I love searching for new skills and hobbies<br>
+                        to learn and solving puzzles whenever possible and have a cat named Panda.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body" style="padding-bottom: 50px;">
+            <div class="vertical-line" id="projects"></div>
+            
+            <div style="padding-top: 25px;">
+                <div style="display:inline-block; text-align: right; vertical-align: top;">
+                    <h2>#002<br>Projects</h2>
+                </div>
+                
+                <div class="vertical-line" style="display: inline-block; height: 250px; margin-left: 20px; margin-right: 20px;"></div>
+
+                <div style="display: inline-block; vertical-align: top;">
+                    <div class="projectbox" style="background-image: url('');">
+                        <div class="project_transform">
+                            <div class="project_description">
+                                <h2 style="margin: 0;">Project 1<br>Description</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
+                    <div class="projectbox">
+                        <div class="project_transform">
+                            <div class="project_description">
+                                <h2 style="margin: 0;">Project 2<br>Description</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="vertical-align: top; display: inline-block; margin-left: 10px; margin-right: 10px">
+                        <div class="projectbox">
+                            <div class="project_transform">
+                                <div class="project_description">
+                                    <h2 style="margin: 0;">Project 3<br>Description</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="vertical-align: top; display: inline-block; margin-left: 10px; margin-right: 10px">
+                        <div class="projectbox">
+                            <div class="project_transform">
+                                <div class="project_description">
+                                    <h2 style="margin: 0;">Project 4<br>Description</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="vertical-align: top; display: inline-block; margin-left: 10px; margin-right: 10px">
+                        <div class="projectbox">
+                            <div class="project_transform">
+                                <div class="project_description">
+                                    <h2 style="margin: 0;">More<br>Projects...</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            
+            <div class="body" style="padding-bottom: 125px;">
+                <div class="vertical-line" id="contact"></div>
+
+                <div style="padding-top: 25px;">
+                
+                    <div style="display:inline-block; text-align: right; vertical-align: top;">
+                        <h2>#003<br>Contact<br><span style="font-size: small;">If you feel the need<br>to reach out to me.</span></h2>
+                    </div>
+                    
+                    <div class="vertical-line" style="display: inline-block; height: 250px; margin-left: 20px; margin-right: 20px;"></div>
+
+                    <form id="test-form" style="display: inline-block; vertical-align: top; text-align: left;">
+            
+                        <div style="padding-bottom: 10px;">
+                            <label style="display: inline-block;font-size: large; padding-right: 10px;">Name: </label>
+                            <input type="text" class="input_v1" name="name" placeholder="Taylor Smith"/>
+                        </div>
+                    
+                        <div style="padding-bottom: 10px;">
+                            <label style="display: inline-block;font-size: large; padding-right: 10px;">Email: </label>
+                            <input type="text" class="input_v1" name="email" placeholder="taylor.smith@company.com"/>
+                        </div>
+                        
+                        <div style="padding-bottom: 10px;">
+                            <label style="display: inline-block; font-size: large; padding-right: 10px;">Subject: </label>
+                            <input type="text" class="input_v1" name="subject" placeholder="Subject Matter"/>
+                        </div>
+                        
+                        <div style="padding-bottom: 10px;">
+                            <label style="vertical-align: top; font-size: large; padding-right: 10px;">Body:</label>
+                            <textarea type="text" class="input_v2" style="vertical-align: top;" name="body" placeholder="Reason for reaching out"></textarea>
+                        </div>
+                    
+                        <div style="text-align: center;">
+                            <button class="button" style="color: black; margin: 0 auto;" id="submit-form">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+
+    <footer>
+        <div style="font-family: Montserrat, sans-serif;
+            font-size: small; 
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            background-color: lightgray; 
+            width: 70%;">
+            © 2021 Joshua Yuen. Design Insight and Guidance by <a href="https://www.linkedin.com/in/elishiali/">Elishia Li</a>
+        </div>
+    </footer>
+
+    <!-- JS Scripts-->
+    <script>
+        function BackToBeginning() { 
+            window.scrollTo(0, 0);
+    }
+    </script>
+    
+    <script>
+        function ToAbout() {
+            document.getElementById("about").scrollIntoView();
+    }
+    </script>
+
+    <script>
+        function ToProjects() {
+            document.getElementById("projects").scrollIntoView();
+    }
+    </script>
+
+    <script>
+        function ToResume() {
+            document.location.href = "";
+    }
+    </script>
+
+    <script>
+        function ToContact() {
+            document.getElementById("contact").scrollIntoView();
+    }
+    </script>
+    
+    <script>
+        function ToLinkedIn(){
+            window.open("https://www.linkedin.com/in/joshua-yuen/",'_blank');
+        }
+    </script>
+
+    <script>
+        function ToGithub(){
+            window.open("https://github.com/joshua-who-now",'_blank');
+        }
+    </script>
+    
+</HTML5>
