@@ -1,0 +1,170 @@
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    padding:0%
+}
+
+li {
+    display:inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid black;
+}
+li:last-child {
+    border-right: none;
+}
+
+.navbar {
+    z-index: 9999; 
+    position:fixed;
+    right:5%;
+    border-radius: 10px;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    
+
+    font-family: Montserrat, sans-serif;
+
+    top:10px;
+    
+    
+    background-color: white;
+}
+
+.button {
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+    border: none;
+    color: grey;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: medium;
+
+    cursor: pointer;
+}
+.button:hover {
+    color:black;
+    text-shadow: 2px 1px 2px lightgrey;
+    
+}
+.button:focus {
+    outline:none;
+}
+
+.smbutton {
+    background-color: white;
+    border: none;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+
+    padding-top: 5px;
+    
+}
+.smbutton:hover {
+    animation: bumpout .3s ease;
+}
+.smbutton:focus {
+    outline:none;
+}
+
+.vertical-line {
+    position:relative;
+    width: 1px;
+    height: 75px;
+    background:grey;
+    margin: 0 auto;
+}
+
+.body {
+    font-family: Montserrat, sans-serif;
+
+    position: relative;
+    font-size: 80%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.projectbox {
+    width: 375px;
+    height: 275px;
+    background-size: 100% 100%;
+    background-color: grey;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-duration: .75s;
+}
+
+.projectbox:hover {
+    transition-duration: .75s;
+    transform:scale(1.10);
+}
+
+.project_transform {
+    overflow: hidden;
+    height: 0px;
+}
+
+.projectbox:hover .project_transform {
+    height: 100%;
+}
+
+.project_description {
+    transition-duration: .75s;
+    font-family: Montserrat, sans-serif;
+    text-align:center;
+    color: white;
+}
+
+.projectbox:hover .project_description {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    height: 100%;
+}
+
+.input_v1 {
+    font-size: large;
+    border-top-style: none; 
+    border-left-style:none; 
+    border-right-style: none;
+    outline: none;
+
+    width: 80%;
+    float:right;
+} 
+
+.input_v2 {
+    font-size: medium;
+    width: 500px;
+    height: 300px;
+    outline: none;
+    resize: none;
+} 
+
+.text-inline {
+    white-space: nowrap;
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+@keyframes bumpout {
+    0% {padding-bottom: 0px;}
+    50% {padding-bottom: 3px; padding-top: 2px;}
+    100% {padding-bottom: 0px;}
+}

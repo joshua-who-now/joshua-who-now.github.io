@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<HTML5>
+    <head>
+        <link rel="icon" href="https://raw.githubusercontent.com/joshua-who-now/joshua-who-now.github.io/main/icon.png" type="image/x-icon type">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="">
+    </head>
+
+    <header style="padding-top: 30px; padding-bottom: 30px;">
+        <div class="navbar">
+            <ul>
+                <li><button class="button" onclick="BackToBeginning()">HOME</button></li>
+                <li><button class="button" onclick="ToAbout()">ABOUT</button></li>
+                <li><button class="button" onclick="ToProjects()">PROJECTS</button></li>
+                <li><button class="button" onclick="ToResume()">RESUME</button></li>
+                <li><button class="button" onclick="ToContact()">CONTACT</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <body style="text-align: center;">
+        <div>
+            <h2 style="font-family: Montserrat, sans-serif; display: inline-block;">RESUME</h2>
+            <button class="button" onclick="OpenResume()" style="display: inline-block; vertical-align: middle; padding-bottom: 10px;">
+                <img src="" height=40px width=auto>
+            </button>
+        </div>
+        
+        <div style="margin: 0 auto; height: 40px; width: 70%; background-color: lightgrey;"></div>
+
+        <img src="" height=auto width=60%>
+        
+    </body>
+
+    <footer>
+        <div style="font-family: Montserrat, sans-serif; 
+            font-size: small; 
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            background-color: lightgray; 
+            width: 70%;">
+            © 2021 Joshua Yuen. Design Insight and Guidance by <a href="https://www.linkedin.com/in/elishiali/">Elishia Li</a>
+        </div>
+    </footer>
+
+
+    <!-- JS Scripts-->
+    <script type="text/javascript">
+        function OpenResume()
+        {
+            window.open("",'_blank');
+        }
+    </script>
+
+    <script>
+        function BackToBeginning() { 
+            document.location.href = "joshua-who-now.github.io";
+            window.scrollTo(0, 0);
+            
+    }
+    </script>
+    
+    <script>
+        function ToAbout() {
+            document.location.href = "joshua-who-now.github.io#about";
+    }
+    </script>
+
+    <script>
+        function ToProjects(){
+            document.location.href = "joshua-who-now.github.io#projects";
+        }
+    </script>
+
+    <script>
+        function ToResume() {
+            window.scrollTo(0, 0);
+    }
+    </script>
+
+    <script>
+        function ToContact(){
+            document.location.href = "joshua-who-now.github.io#contact";
+        }
+    </script>
+
+</HTML5>
