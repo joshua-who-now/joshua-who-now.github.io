@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <HTML5>
+    <meta charset="utf-8">
+    <title>Joshua Yuen</title>
+    
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
 
         <link rel="stylesheet" href="css/stylesheet.css"/>
+
+        <script src="js/index.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <a id="home"></a>
@@ -150,38 +157,36 @@
                     
                     <div class="vertical-line" style="display: inline-block; height: 250px; margin-left: 20px; margin-right: 20px;"></div>
 
-                    <form id="test-form" style="display: inline-block; vertical-align: top; text-align: left;">
+                    <form id="contact-form" style="display: inline-block; vertical-align: top; text-align: left;">
             
                         <div style="padding-bottom: 10px;">
                             <label style="display: inline-block;font-size: large; padding-right: 10px;">Name: </label>
-                            <input type="text" class="input_v1" name="name" placeholder="Taylor Smith"/>
+                            <input type="text" class="input_v1" name="name" id="name" placeholder="Taylor Smith"/>
                         </div>
                     
                         <div style="padding-bottom: 10px;">
                             <label style="display: inline-block;font-size: large; padding-right: 10px;">Email: </label>
-                            <input type="text" class="input_v1" name="email" placeholder="taylor.smith@company.com"/>
+                            <input type="text" class="input_v1" name="email" id="email" placeholder="taylor.smith@company.com"/>
                         </div>
                         
                         <div style="padding-bottom: 10px;">
                             <label style="display: inline-block; font-size: large; padding-right: 10px;">Subject: </label>
-                            <input type="text" class="input_v1" name="subject" placeholder="Subject Matter"/>
+                            <input type="text" class="input_v1" name="subject" id="subject" placeholder="Subject Matter"/>
                         </div>
                         
                         <div style="padding-bottom: 10px;">
                             <label style="vertical-align: top; font-size: large; padding-right: 10px;">Body:</label>
-                            <textarea type="text" class="input_v2" style="vertical-align: top;" name="body" placeholder="Reason for reaching out"></textarea>
+                            <textarea type="text" class="input_v2" style="vertical-align: top;" name="body" id="body" placeholder="Reason for reaching out"></textarea>
                         </div>
                     
                         <div style="text-align: center;">
-                            <button class="button" style="color: black; margin: 0 auto;" id="submit-form">Submit</button>
+                            <button class="button" type="submit" style="color: black; margin: 0 auto;" id="submit">Submit</button>
                         </div>
 
                     </form>
 
                 </div>
-
             </div>
-
         </div>
     </body>
 
@@ -197,48 +202,33 @@
             © 2021 Joshua Yuen. Design Insight and Guidance by <a href="https://www.linkedin.com/in/elishiali/">Elishia Li</a>
         </div>
     </footer>
-
+    
     <!-- JS Scripts-->
-    <script>
-        function BackToBeginning() { 
-            window.scrollTo(0, 0);
-    }
-    </script>
-    
-    <script>
-        function ToAbout() {
-            document.getElementById("about").scrollIntoView();
-    }
-    </script>
+    <script>  
+        var url = 'https://script.google.com/macros/s/AKfycbxsUtN8p6-fCjmWU1Ng9sjvgbPkKg4FcIv5K0h5sNgEat-_11QZcRAdxS28RB8wy_cP/exec'
+        
+        $('#submit').on('click', function(e) {
+        e.preventDefault();
+        
+        var requestcontact = new Object({
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            body: document.getElementById('body').value
+        });
+        
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('subject').value = '';
+        document.getElementById('body').value = '';
+        
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: requestcontact
+        });
+        })
+        </script>
 
-    <script>
-        function ToProjects() {
-            document.getElementById("projects").scrollIntoView();
-    }
-    </script>
-
-    <script>
-        function ToResume() {
-            document.location.href = "https://joshua-who-now.github.io/resume";
-    }
-    </script>
-
-    <script>
-        function ToContact() {
-            document.getElementById("contact").scrollIntoView();
-    }
-    </script>
-    
-    <script>
-        function ToLinkedIn(){
-            window.open("https://www.linkedin.com/in/joshua-yuen/",'_blank');
-        }
-    </script>
-
-    <script>
-        function ToGithub(){
-            window.open("https://github.com/joshua-who-now",'_blank');
-        }
-    </script>
-    
 </HTML5>
