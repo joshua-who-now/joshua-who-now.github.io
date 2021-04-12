@@ -210,6 +210,11 @@
         $('#submit').on('click', function(e) {
         e.preventDefault();
         
+        console.log(document.getElementById('name').value);
+        console.log(document.getElementById('email').value);
+        console.log(document.getElementById('subject').value);
+        console.log(document.getElementById('body').value);
+
         var requestcontact = new Object({
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
