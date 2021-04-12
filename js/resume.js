@@ -2,7 +2,7 @@
 
 function OpenResume()
 {
-    window.open("https://joshua-who-now.github.io/resources/Resume%20C_JY%2012_2020%20-%20th.v.pdf",'_blank');
+    window.open("https://joshua-who-now.github.io/resources/Resume%20C_JY%203_2021.pdf",'_blank');
 }
 
 function BackToBeginning() { 
