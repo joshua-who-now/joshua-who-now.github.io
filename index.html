@@ -180,7 +180,7 @@
                         </div>
                     
                         <div style="text-align: center;">
-                            <button class="button" type="submit" style="color: black; margin: 0 auto;" id="submit">Submit</button>
+                            <button class="button" style="color: black; margin: 0 auto;" id="submit">Submit</button>
                         </div>
 
                     </form>
@@ -210,11 +210,6 @@
         $('#submit').on('click', function(e) {
         e.preventDefault();
         
-        console.log(document.getElementById('name').value);
-        console.log(document.getElementById('email').value);
-        console.log(document.getElementById('subject').value);
-        console.log(document.getElementById('body').value);
-
         var requestcontact = new Object({
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
