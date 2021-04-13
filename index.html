@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <HTML5>
-    <meta charset="utf-8">
-    <title>Joshua Yuen</title>
-    
     <head>
+        <meta charset="utf-8">
+        <title>Joshua Yuen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="resources/media/JY-xsmall.png" type="image/x-icon">
+        
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
 
         <link rel="stylesheet" href="css/stylesheet.css"/>
@@ -56,12 +58,12 @@
                 <div style="display: inline-block; text-align: right; transform: translateY(-10%);">
                     <h2>#001<br>About Me</h2>
                     <div style="text-align: center;">
-                        <img class="image-cropper" src="https://avatars.githubusercontent.com/u/55476643?s=460&u=be15fffa6e68681a7f638f4d6d6392ed41d50f14&v=4">
+                        <img class="image-cropper" alt="Chicago Skyline Header" src="https://avatars.githubusercontent.com/u/55476643?s=460&u=be15fffa6e68681a7f638f4d6d6392ed41d50f14&v=4">
                         <div class="text-inline">Based in Chicago, IL</div>
 
                         <div>
-                            <img class="smbutton" onclick="ToLinkedIn()" src="https://raw.githubusercontent.com/joshua-who-now/joshua-who-now.github.io/main/resources/media/linkedin_ico.png" width="20px" height="20px">
-                            <img class="smbutton" onclick="ToGithub()" src="https://raw.githubusercontent.com/joshua-who-now/joshua-who-now.github.io/main/resources/media/github_ico.png" width="20px" height="20px">
+                            <img class="smbutton" alt="LinkedIn Icon" onclick="ToLinkedIn()" src="https://raw.githubusercontent.com/joshua-who-now/joshua-who-now.github.io/main/resources/media/linkedin_ico.png" width="20px" height="20px">
+                            <img class="smbutton" alt="GitHub Icon" onclick="ToGithub()" src="https://raw.githubusercontent.com/joshua-who-now/joshua-who-now.github.io/main/resources/media/github_ico.png" width="20px" height="20px">
                         </div>
                         
                     </div>
@@ -160,22 +162,22 @@
                     <form id="contact-form" style="display: inline-block; vertical-align: top; text-align: left;">
             
                         <div style="padding-bottom: 10px;">
-                            <label style="display: inline-block;font-size: large; padding-right: 10px;">Name: </label>
+                            <label for="name" style="display: inline-block;font-size: large; padding-right: 10px;">Name: </label>
                             <input type="text" class="input_v1" name="name" id="name" placeholder="Taylor Smith"/>
                         </div>
                     
                         <div style="padding-bottom: 10px;">
-                            <label style="display: inline-block;font-size: large; padding-right: 10px;">Email: </label>
+                            <label for="email" style="display: inline-block;font-size: large; padding-right: 10px;">Email: </label>
                             <input type="text" class="input_v1" name="email" id="email" placeholder="taylor.smith@company.com"/>
                         </div>
                         
                         <div style="padding-bottom: 10px;">
-                            <label style="display: inline-block; font-size: large; padding-right: 10px;">Subject: </label>
+                            <label for="subject" style="display: inline-block; font-size: large; padding-right: 10px;">Subject: </label>
                             <input type="text" class="input_v1" name="subject" id="subject" placeholder="Subject Matter"/>
                         </div>
                         
                         <div style="padding-bottom: 10px;">
-                            <label style="vertical-align: top; font-size: large; padding-right: 10px;">Body:</label>
+                            <label for="body" style="vertical-align: top; font-size: large; padding-right: 10px;">Body:</label>
                             <textarea type="text" class="input_v2" style="vertical-align: top;" name="body" id="body" placeholder="Reason for reaching out"></textarea>
                         </div>
                     
