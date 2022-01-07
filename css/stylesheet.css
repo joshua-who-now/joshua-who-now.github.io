@@ -109,6 +109,7 @@ li:last-child {
     margin-top: 10px;
     margin-bottom: 10px;
     transition-duration: .75s;
+    border: 1px solid  black;
 }
 
 .projectbox:hover {
@@ -182,5 +183,9 @@ li:last-child {
     padding-bottom: 20px;
     margin: 0 auto;
     background-color: lightgray; 
-    width: 70%;
+    width: 70vw;
+}
+
+.fade {
+    opacity: 1;
 }
